@@ -12,12 +12,12 @@ resolvers ++= Seq(
 // things that depend on SBT itself.
 resolvers <+= sbtResolver.identity
 
-// Remove the sbt-iea depdendency if you don't need to use the gen-idea command to generate your IDEA project files.
+// Remove the sbt-idea dependency if you don't need to use the 'gen-idea' command to generate your IDEA project files.
 libraryDependencies ++= Seq(
   "se.scalablesolutions.akka" % "akka-sbt-plugin" % "1.1.3",
   "com.github.mpeltonen" %% "sbt-idea" % "0.10.0"
 )
 
 // Fetches the correct version of the xsbt-web-plugin for the current version of SBT. This is what gives you
-// SBT commands usch as jetty-run and jetty-stop.
+// SBT commands such as 'jetty-run' and 'jetty-stop'.
 libraryDependencies <+= sbtVersion(v => "com.github.siasia" %% "xsbt-web-plugin" % ("0.1.0-"+v))

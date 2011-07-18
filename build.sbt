@@ -1,9 +1,9 @@
 // Project specific settings.
 name := "spray-template"
 
-organization := "spray"
+organization := "spray.cc"
 
-version := "0.7.0"
+version := "0.7.0-SNAPSHOT"
 
 scalaVersion := "2.9.0-1"
 
@@ -14,10 +14,9 @@ checksums := Nil
 
 // Absolutely necessary dependencies.
 libraryDependencies ++= Seq(
-  "cc.spray" %% "spray-client" % "0.7.0-SNAPSHOT" % "compile" withSources(),
+  "se.scalablesolutions.akka" % "akka" % "1.1.3",
   "cc.spray" %% "spray-http" % "0.7.0-SNAPSHOT" % "compile" withSources(),
-  "cc.spray" %% "spray-server" % "0.7.0-SNAPSHOT" % "compile" withSources(),
-  "se.scalablesolutions.akka" % "akka" % "1.1.3"
+  "cc.spray" %% "spray-server" % "0.7.0-SNAPSHOT" % "compile" withSources()
 )
 
 // Testing dependencies.
@@ -37,8 +36,7 @@ libraryDependencies ++= Seq(
 // commands such as jetty-run.
 seq(webSettings :_*)
 
-// We are using the 0.7.0 snapshot of Spray, so we need to add this resolver.
+// We are using the 0.7.0-SNAPSHOT of spray, so we need to add this resolver.
 resolvers += ScalaToolsSnapshots
 
-resolvers += "Akka Repository" at "http://akka.io/repository",
-
+resolvers += "Akka Repository" at "http://akka.io/repository"
