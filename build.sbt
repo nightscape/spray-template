@@ -21,7 +21,7 @@ libraryDependencies ++= Seq(
 
 // Testing dependencies.
 libraryDependencies ++= Seq(
-  "org.scala-tools.testing" %% "specs" % "1.6.8" % "test",
+  "org.specs2" %% "specs2" % "1.5" % "test",
   "org.eclipse.jetty" % "jetty-server" % "8.0.0.M3" % "jetty",
   "org.eclipse.jetty" % "jetty-webapp" % "8.0.0.M3" % "jetty"
 )
