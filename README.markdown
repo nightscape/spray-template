@@ -1,4 +1,4 @@
-## _spray_ Template Project 
+## _spray_ Template Project (SBT 0.10.x)
 
 1. Git-clone this repository. Alternatively, download and extract a [tarball](http://github.com/spray/spray-template/tarball/master) or [zip](http://github.com/sirthias/spray-template/zipball/master).
 
@@ -8,22 +8,21 @@
 
         $ cd my-project
 
-3. Launch [SBT](http://code.google.com/p/simple-build-tool) (note that you will need SBT 0.10.1):
+3. Launch [SBT](http://code.google.com/p/simple-build-tool) (SBT 0.10.1, if you'd like to use SBT 0.7.7 check out the `develop` branch of this repository):
 
         $ sbt
 
-4. Fetch the dependencies:
+4. Compile everything and run the tests:
 
-        > update
+        > test
 
-5. Start Jetty, enabling continuous compilation and reloading:
+5. Start Jetty:
 
         > jetty-run
-        > ~prepare-webapp
 
 6. Browse to http://localhost:8080/
 
 7. Learn more at http://www.spray.cc/
 
-8. Start hacking on `src/main/scala/com/example/HelloServiceBuilder.scala`
+8. Start hacking on `src/main/scala/com/example/HelloService.scala`
 
