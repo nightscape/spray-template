@@ -29,7 +29,7 @@ libraryDependencies ++= Seq(
 // slf4j is not required but a good option for logging. logback is a good slf4j backend.
 libraryDependencies ++= Seq(
   "se.scalablesolutions.akka" % "akka-slf4j" % "1.1.3",
-  "ch.qos.logback" % "logback-classic" % "0.9.28" % "runtime"
+  "ch.qos.logback" % "logback-classic" % "0.9.29" % "runtime"
 )
 
 // Inject the xsbt-web-plugin webSettings into these project settings to enable
