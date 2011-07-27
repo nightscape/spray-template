@@ -36,7 +36,12 @@ libraryDependencies ++= Seq(
 // commands such as jetty-run.
 seq(webSettings :_*)
 
-// We are using the 0.7.0-SNAPSHOT of spray, so we need to add this resolver.
-resolvers += ScalaToolsSnapshots
+// When depending on a spray snapshot build we need the ScalaToolsSnapshots resolver
+// GuiceyFruit is required because their things were removed from public Maven repos
+// and some of their jars are transitive dependencies.
+resolvers ++= Seq(
+  ScalaToolsSnapshots,
+  "GuiceyFruit Release Repository" at "http://guiceyfruit.googlecode.com/svn/repo/releases/"
+)
 
 resolvers += "Akka Repository" at "http://akka.io/repository"

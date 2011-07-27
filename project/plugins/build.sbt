@@ -1,8 +1,6 @@
-// Additional repositories to search for plugins in. GuiceyFruit is required because their things were
-// removed from public Maven repos and some of their jars are transitive dependencies.
-// Remove sbt-idea-repo if you don't need to use the gen-idea command to generate your IDEA project files.
+// Additional repositories to search for plugins in.
+// You can remove the sbt-idea-repo if you don't need to use the gen-idea command to generate your IDEA project files.
 resolvers ++= Seq(
-  "GuiceyFruit Release Repository" at "http://guiceyfruit.googlecode.com/svn/repo/releases/",
   "Akka Repository" at "http://akka.io/repository",
   "sbt-idea-repo" at "http://mpeltonen.github.com/maven/",
   "Web plugin repo" at "http://siasia.github.com/maven2"
