@@ -3,7 +3,7 @@ name := "spray-template"
 
 organization := "spray.cc"
 
-version := "0.7.0-SNAPSHOT"
+version := "0.7.0"
 
 scalaVersion := "2.9.0-1"
 
@@ -15,8 +15,8 @@ checksums := Nil
 // Absolutely necessary dependencies.
 libraryDependencies ++= Seq(
   "se.scalablesolutions.akka" % "akka" % "1.1.3",
-  "cc.spray" %% "spray-http" % "0.7.0-SNAPSHOT" % "compile" withSources(),
-  "cc.spray" %% "spray-server" % "0.7.0-SNAPSHOT" % "compile" withSources()
+  "cc.spray" %% "spray-http" % "0.7.0" % "compile" withSources(),
+  "cc.spray" %% "spray-server" % "0.7.0" % "compile" withSources()
 )
 
 // Testing dependencies.
